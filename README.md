@@ -44,4 +44,6 @@
       * -Tlink.ld  使用link.ld作为链接脚本
     arm-none-eabi-objcopy -O binary -j.text file.o file.bin
   * 对于ld脚本的编写,参考"/ld"目录
+
+
 ##更多内容待添加

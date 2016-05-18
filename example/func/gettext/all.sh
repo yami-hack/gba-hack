@@ -1,3 +1,4 @@
+#!/bin/bash
 sh create_rom_s.sh
 sh build_obj.sh
 sh link_elf.sh

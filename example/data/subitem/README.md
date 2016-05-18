@@ -11,7 +11,15 @@
 
 4,得到elf，可以用vba-m打开elf文件
 
-
+5,改动的文件有 
+	item.c 
+	link.ld
+	未改动的
+	segment.ld
+	rom.ld
+	romhack.ld
+	需要文件
+	FE8(US).gba
 
 一,	在所有.sh文件中，都要注释，执行什么命令
 	命令基本都是从gnu c doc 中来的

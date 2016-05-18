@@ -222,7 +222,7 @@ def Fs(fn):
 #数据
 #add_chunk_file(0x858288,0x34*255,0,"char_data.asm",Fs("char_data.l"));
 #
-add_chunk(0x0, 0x0, 0, Fs("base.info"));
+#add_chunk(0x0, 0x0, 0, Fs("base.info"));
 
 
 
@@ -237,12 +237,12 @@ add_chunk(0x0, 0x0, 0, Fs("base.info"));
 
 argc    =   len(sys.argv);
 
-if  argc< 3:
-    print 'error:  binaryfile [outfile] ext.py>[outfile]'
+if  argc< 2:
+    print 'error:  binaryfile input_file [ext.py ext2.py]>out_file'
     exit();
     
-
-execfile(sys.argv[2]);
+if argc>2:
+	execfile(sys.argv[2]);
     
 print "@out binary file:" + sys.argv[1];
 ifile    =    open(sys.argv[1],"rb");
